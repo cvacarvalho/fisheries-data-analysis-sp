@@ -31,8 +31,6 @@ CREATE TABLE desembarque_pesca (
 ```
 <img width="453" height="747" alt="fig2" src="https://github.com/user-attachments/assets/f330e15d-f2de-4d50-9cbe-3f2b1b23ef07" />
 
-```
-```
 ### 1. As 5 Espécies Mais Desembarcadas (Volume Acumulado)
 **Principais pescados no estado:**
 ```
@@ -47,10 +45,11 @@ LIMIT 5;
 
 ```
 A corvina lidera o ranking 4,84 M kg seguida de perto pelo camarão_sete_barbas 4,47 M kg. Isso demonstra forte dependência do estado em recursos demersais e de arrasto de fundo. Em seguida vêm a pescada-foguete (2,08 M kg), manjuba-de-iguape (1,61 M kg) e sardinha-verdadeira (1,41 M kg). 
-```
-```
+
+
 ### 2. Análise de Tendência Temporal
 **a) Comportamento do volume e faturamento do estado entre 2023 e 2025**
+````
 ```sql
 SELECT
       ano,
@@ -60,6 +59,8 @@ SELECT
   GROUP BY ano 
   ORDER BY ano ASC 
 ```
+````
+
 Analisando 2023, 2024, 2025 e o que foi coletado no ano corrente (2026), observa-se um pico em 2024, o volume saltou de 5,3 milhões de kg em 2023 para quase 5,9 milhões de kg em 2024, acompanhado de um faturamento de 45 milhões de reais. Em 2025 houve um recuo, voltando para a casa dos 5,5 milhões de kg, com o faturamento mais baixo dos três anos completos (43,7 milhoes de reais). Os dados de 2026, até março, registram 706 mil kg de pescado. Os números demonstram que a atividade não é linear. 
 
 **b) Evolução dos 5 principais pescados ano a ano**
@@ -74,9 +75,9 @@ GROUP BY ano, pescado
 ORDER BY pescado, ano ASC;
 ```
 Dados organizados por peixe,  mostrando a evolução ao longo dos anos (2023, 2024, 2025 e 2026). 
-Sardinha-verdadeira: caiu entre 2023 e 2024, mas mais que dobrou em 2025 - comportamento típico de pequenos pelágicos,  que pode indicar sucesso de recrutamento ou reflexo de uma safra espetacular pós defeso. 
-Camarão-sete-barbas, pescada-foguete e manjuba-iguape: tendência de queda constante de 2023 a 2025. Como o camarão e a pescada costumam compartilhar o mesmo ambiente (fundo arrastável), essa queda conjunta pode indicar pressão da pesca ou algum fator ambiental. 
-Corvina: captura em alta constante de  2023 a 2025, confirmando-se como o principal recurso desembarcado do estado. 
+*Sardinha-verdadeira: caiu entre 2023 e 2024, mas mais que dobrou em 2025 - comportamento típico de pequenos pelágicos,  que pode indicar sucesso de recrutamento ou reflexo de uma safra espetacular pós defeso. 
+*Camarão-sete-barbas, pescada-foguete e manjuba-iguape: tendência de queda constante de 2023 a 2025. Como o camarão e a pescada costumam compartilhar o mesmo ambiente (fundo arrastável), essa queda conjunta pode indicar pressão da pesca ou algum fator ambiental. 
+*Corvina: captura em alta constante de  2023 a 2025, confirmando-se como o principal recurso desembarcado do estado. 
 
 ### 3. Geografia do Desembarque (Polos Regionais)
 **a) Concentração geográfica da produção**
@@ -92,14 +93,11 @@ LIMIT 5;
 
    <img width="388" height="461" alt="fig3" src="https://github.com/user-attachments/assets/9b7e16d0-45ae-43d7-903d-063722fc205b" />
 
-```
 
 Santos/Guarujá 9,01 M kg; Cananéia 3,11 M kg; Iguape 1,85 M kg; Ubatuba 1,25 M kg; São Sebastião 0,83 M kg.
 
-```
- 
+
 **b) Qual espécie domina qual região?**
-```
 ```sql
 SELECT
      municipio,
@@ -110,8 +108,8 @@ WHERE municipio IN ('Santos/Guarujá', 'Cananéia')
 GROUP BY municipio, pescado
 ORDER BY municipio, total_kg DESC;
 ```
-Santos/Guarujá se consolida com corvina no topo,  camarão-sete-barbas e a sardinha-verdadeira. 
-Cananéia mostra a força do litoral sul com a corvina e a pescada-foguete dominando os maiores volumes, seguida pela tainha. 
+*Santos/Guarujá se consolida com corvina no topo,  camarão-sete-barbas e a sardinha-verdadeira. 
+*Cananéia mostra a força do litoral sul com a corvina e a pescada-foguete dominando os maiores volumes, seguida pela tainha. 
 
 ### 4. Principais Insights
 
