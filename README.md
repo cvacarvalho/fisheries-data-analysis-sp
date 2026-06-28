@@ -89,8 +89,11 @@ GROUP BY municipio
 ORDER BY total_kg DESC
 LIMIT 5;
 ```
+
    <img width="388" height="461" alt="fig3" src="https://github.com/user-attachments/assets/9b7e16d0-45ae-43d7-903d-063722fc205b" />
+
 ```
+
 Santos/Guarujá 9,01 M kg; Cananéia 3,11 M kg; Iguape 1,85 M kg; Ubatuba 1,25 M kg; São Sebastião 0,83 M kg.
  
 **b) Qual espécie domina qual região?**
@@ -109,7 +112,7 @@ Cananéia mostra a força do litoral sul com a corvina e a pescada-foguete domin
 
 ### 4. Principais Insights
 
-* **Hegemonia Regional Diferenciada:** O eixo Santos/Guarujá funciona como o hub Industrial do estado, isolado no topo do ranking com quase 9,0M kg, ancorado na pesca de escala de corvina, camarão-sete-barbas e sardinha-verdadeira. Já o Litoral Sul (Cananéia + Iguape) se consolida como a potência da pesca artesanal/estuarina, somando quase 5M kg com forte expressão da tainha no inverno.
+* **Hegemonia Regional Diferenciada:** O eixo Santos/Guarujá funciona como o hub Industrial do estado, isolado no topo do ranking com 9,0M kg, ancorado na pesca de escala de corvina, camarão-sete-barbas e sardinha-verdadeira. Já o Litoral Sul (Cananéia + Iguape) se consolida como a potência da pesca artesanal/estuarina, somando quase 5M kg com forte expressão da tainha no inverno.
 * **A Rainha do Desembarque:** a corvina provou ser o recurso mais estratégico e resiliente de São Paulo. Além de liderar o volume acumulado total, apresentou crescimento estável de 2023 a 2025 e ocupa o topo do ranking nas duas regiões.
 * **Anomalia de Comportamento (Efeito Sanfona):** a sardinha-verdadeira registou quedas consecutivas em 2023 e 2024, mas mais do que dobrou o seu volume em 2025. Este comportamento sugere forte dependência de fatores sazonais, recrutamento biológico ou safras excecionais pós-defeso.
 * **Alerta de Tendência:** as espécies *camarão-sete-barbas, pescada-foguete e manjuba-de-iguape enfrentam uma tendência de queda constante na produção de 2023 a 2025, sinalizando uma necessidade de atenção para à gestão dos estoques demersais.
