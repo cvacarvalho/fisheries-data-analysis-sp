@@ -32,7 +32,7 @@ CREATE TABLE desembarque_pesca (
 <img width="453" height="747" alt="fig2" src="https://github.com/user-attachments/assets/f330e15d-f2de-4d50-9cbe-3f2b1b23ef07" />
 
 ```
-
+```
 ### 1. As 5 Espécies Mais Desembarcadas (Volume Acumulado)
 **Principais pescados no estado:**
 ```
@@ -95,8 +95,11 @@ LIMIT 5;
 ```
 
 Santos/Guarujá 9,01 M kg; Cananéia 3,11 M kg; Iguape 1,85 M kg; Ubatuba 1,25 M kg; São Sebastião 0,83 M kg.
+
+```
  
 **b) Qual espécie domina qual região?**
+```
 ```sql
 SELECT
      municipio,
@@ -117,7 +120,7 @@ Cananéia mostra a força do litoral sul com a corvina e a pescada-foguete domin
 * **Anomalia de Comportamento (Efeito Sanfona):** a sardinha-verdadeira registou quedas consecutivas em 2023 e 2024, mas mais do que dobrou o seu volume em 2025. Este comportamento sugere forte dependência de fatores sazonais, recrutamento biológico ou safras excecionais pós-defeso.
 * **Alerta de Tendência:** as espécies *camarão-sete-barbas, pescada-foguete e manjuba-de-iguape enfrentam uma tendência de queda constante na produção de 2023 a 2025, sinalizando uma necessidade de atenção para à gestão dos estoques demersais.
 
-### 7. Conclusão
+### 5. Conclusão
 Este projeto demonstra:
 * Domínio de ETL e tratamento de tipos de dados na origem (Excel).
 * Criação, modelagem e estruturação de tabelas relacionais no PostgreSQL.
